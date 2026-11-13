@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07070d">
+<title>Minhazur Rahman | Aspiring Full-Stack Developer</title>
+<style>
+:root{--bg:#07070d;--card:#10101a;--tx:#f2f2f8;--mu:#a1a1b5;--ac:#8b7bff;--ac2:#38bdf8;--bd:#1f1f2e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07070d}}
+:root[data-theme="dark"]{--bg:#07070d}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{max-width:1080px;margin:auto;padding:0 20px}
+nav{position:fixed;top:0;left:0;right:0;z-index:30;background:rgba(7,7,13,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd);padding-top:env(safe-area-inset-top,0px)}
+.nb{display:flex;align-items:center;justify-content:space-between;height:64px}.logo{font-weight:800;font-size:1.35rem}.logo b{color:var(--ac)}
+.links{display:flex;gap:4px;align-items:center}.links a{color:var(--mu);font-size:.93rem;padding:6px 11px;border-radius:8px}.links a:hover{color:var(--ac)}
+.btn{display:inline-block;padding:10px 22px;border-radius:999px;font-weight:600;border:1px solid var(--ac);background:linear-gradient(90deg,var(--ac),var(--ac2));border-color:transparent;color:#07070d;cursor:pointer;font-size:.93rem}.btn.o{background:transparent;color:var(--ac);border:1px solid var(--ac)}
+.links .btn{margin-left:8px;color:#07070d}
+#mb{display:none;background:none;border:1px solid var(--bd);color:var(--tx);border-radius:8px;padding:6px 12px;font-size:1.1rem}
+@media(max-width:860px){#mb{display:block}.links{display:none;position:absolute;top:100%;left:0;right:0;background:#07070d;flex-direction:column;align-items:stretch;padding:12px 20px;border-bottom:1px solid var(--bd)}.links.open{display:flex}.links .btn{margin:6px 0 0;text-align:center}}
+section{padding:90px 0 10px}.eyebrow{color:var(--ac);font-weight:600;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+h2{font-size:clamp(1.8rem,4vw,2.4rem);margin:.15em 0 1em}h1{font-size:clamp(2.4rem,7vw,4rem);line-height:1.08;margin:.1em 0}
+.grad{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+#hero{padding-top:140px}.hg{display:grid;grid-template-columns:1.3fr 1fr;gap:44px;align-items:center}@media(max-width:860px){.hg{grid-template-columns:1fr}}
+.type{font-size:1.4rem;font-weight:600;min-height:2.2rem}.type:after{content:"|";color:var(--ac);animation:bl 1s infinite}@keyframes bl{50%{opacity:0}}
+.sub{color:var(--mu);max-width:560px}.row{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+.soc a{border:1px solid var(--bd);background:var(--card);border-radius:12px;padding:8px 15px;font-size:.88rem;color:var(--mu)}.soc a:hover{border-color:var(--ac);color:var(--ac)}
+.photo{aspect-ratio:1;max-width:340px;width:100%;margin:auto;border-radius:30px;background:linear-gradient(135deg,var(--ac),var(--ac2));display:grid;place-items:center;font-size:7rem;font-weight:800;color:#07070d;position:relative;overflow:hidden;box-shadow:0 0 70px #8b7bff33}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:24px;transition:.25s}.card:hover{border-color:#8b7bff66}
+.g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.chip{font-size:.78rem;padding:4px 12px;border-radius:99px;background:#8b7bff1f;color:var(--ac);font-weight:600}
+.mu{color:var(--mu)}.date{color:var(--mu);font-size:.85rem}
+ul.k{list-style:none;padding:0;margin:8px 0;color:var(--mu)}ul.k li{padding-left:20px;position:relative;margin:6px 0;font-size:.94rem}ul.k li:before{content:"▹";position:absolute;left:0;color:var(--ac)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}.tabs button{background:var(--card);border:1px solid var(--bd);color:var(--mu);padding:8px 18px;border-radius:99px;cursor:pointer;font:inherit;font-size:.9rem}.tabs button.on{background:var(--ac);color:#07070d;border-color:var(--ac);font-weight:600}
+#sc .chip{font-size:.95rem;padding:9px 18px;background:var(--card);border:1px solid var(--bd);color:var(--tx)}
+.tl{border-left:2px solid var(--bd);padding-left:22px;margin-left:6px}.tl .card{margin-bottom:18px;position:relative}.tl .card:before{content:"";position:absolute;left:-31px;top:30px;width:12px;height:12px;border-radius:50%;background:var(--ac);box-shadow:0 0 12px var(--ac)}
+.pc{padding:0;overflow:hidden;display:flex;flex-direction:column}.pi{height:180px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:1.7rem;text-align:center;padding:10px}
+.pb{padding:20px 22px 24px;display:flex;flex-direction:column;gap:6px;flex:1}.pb p{margin:0;color:var(--mu);font-size:.93rem}.pb .row{margin:12px 0 0}
+input,textarea{width:100%;padding:13px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:inherit;margin-bottom:12px}
+#detail{display:none;padding:120px 0 20px}.back{color:var(--ac);font-weight:600}.ph{height:230px;border-radius:20px;display:grid;place-items:center;color:#fff;font-size:2.2rem;font-weight:800;margin:16px 0;text-align:center;padding:12px}
+.note{font-size:.8rem;color:var(--mu)}footer{margin-top:80px;border-top:1px solid var(--bd);padding:36px 0;color:var(--mu);font-size:.9rem}
+footer .soc{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+</style>
+</head>
+<body>
+<nav><div class="wrap nb"><a class="logo" href="#hero">Minhaz<b>.</b></a><button id="mb" aria-label="Menu">☰</button>
+<div class="links" id="lk"><a href="#hero">Home</a><a href="#about">/About</a><a href="#experience">/Experience</a><a href="#skills">/Skills</a><a href="#projects">/Projects</a><a href="#education">/Education</a><a class="btn" href="#contact">Let’s Talk</a></div></div></nav>
+
+<main id="home"><div class="wrap">
+<section id="hero"><div class="hg"><div>
+<div class="mu">Hello, I’m</div><h1><span class="grad">Minhazur Rahman</span></h1><div class="type" id="ty"></div>
+<p class="sub">Driven by curiosity about how the web works, I build responsive full-stack applications that turn ideas into products people can use.</p>
+<div class="row soc" id="soc"></div>
+<div class="row"><a class="btn" href="#" id="resume">RESUME</a><a class="btn o" href="#projects">View Projects</a></div></div>
+<div class="photo">M<img src="photo.jpg" alt="Minhazur Rahman" onerror="this.remove()"></div></div></section>
+<section id="about"><div class="eyebrow">Get to know me</div><h2>About Me</h2>
+<div class="g2"><div class="card"><p class="mu" style="margin-top:0">I started programming in my first year of CSE and quickly fell for the web: the moment an idea becomes something you can click is hard to beat. I moved from plain HTML and CSS to React and Next.js, and now build full applications with authentication, databases and deployed backends.</p><p class="mu" style="margin-bottom:0">I enjoy full-stack work where I shape the UI and the API together, and I like projects that solve real campus and everyday problems.</p></div>
+<div class="card"><h3 style="margin-top:0">Beyond code</h3><p class="mu">Outside programming I’m into [add your hobbies, e.g. football, cricket, reading, gaming]. I learn best by building and breaking things.</p><div class="chips"><span class="chip">Curious</span><span class="chip">Team player</span><span class="chip">Detail-minded</span><span class="chip">Always learning</span></div></div></div></section>
+
+<section id="experience"><div class="eyebrow">My career path</div><h2>Experience</h2><div class="tl">
+<div class="card"><h3 style="margin:0">Team Project Member</h3><div>CSE 242 Web Development, East Delta University</div><div class="date">Fall 2026</div><div class="chips"><span class="chip">React</span><span class="chip">Express</span><span class="chip">Prisma</span><span class="chip">PostgreSQL</span></div>
+<ul class="k"><li>Worked in a six-member team on Back2U, a university lost-and-found platform.</li><li>Built parts of the REST API, JWT authentication, image upload and the claim approval flow.</li></ul></div>
+<div class="card"><h3 style="margin:0">Independent Web Developer</h3><div>Self-directed projects</div><div class="date">2025 – Present</div><div class="chips"><span class="chip">Next.js</span><span class="chip">BetterAuth</span><span class="chip">MongoDB</span><span class="chip">Tailwind CSS</span></div>
+<ul class="k"><li>Designed, built and deployed multiple Next.js applications with authentication and external APIs.</li><li>Deployed clients on Vercel and servers on Render.</li></ul></div></div></section>
+
+<section id="skills"><div class="eyebrow">My arsenal</div><h2>Technical Skills</h2><div class="tabs" id="st"></div><div class="chips" id="sc"></div></section>
+
+<section id="projects"><div class="eyebrow">Project showcase</div><h2>Innovative Projects</h2><div class="g2" id="pg"></div></section>
+
+<section id="education"><div class="eyebrow">Academic journey</div><h2>My Education</h2><div class="tl">
+<div class="card"><h3 style="margin:0">Bachelor of Science in Computer Science &amp; Engineering</h3><div>East Delta University, Chattogram, Bangladesh</div><div class="date">2024 – 2028 (expected)</div><p class="mu" style="margin-bottom:0">Building a foundation in data structures, databases and web development through coursework and hands-on projects.</p></div>
+<div class="card"><h3 style="margin:0">Higher Secondary Certificate (Alim), Science</h3><div>Baitush Sharaf Ideal Kamil Madrashah, Chattogram</div><div class="date">2020 – 2022</div><p class="mu" style="margin-bottom:0">Result: <b style="color:var(--ac)">GPA 5.00 (Golden A+)</b></p></div></div></section>
+
+<section id="contact"><div class="eyebrow">Reach out</div><h2>Let’s Connect</h2><div class="g2">
+<div class="card"><h3 style="margin-top:0">Get in Touch</h3><p class="mu">I’m open to internships, collaborations and new ideas. Reach out using the form or by direct email.</p><p>Email<br><a href="mailto:minhajabc23@gmail.com" style="color:var(--ac)">minhajabc23@gmail.com</a></p><p>Phone / WhatsApp<br><a href="https://wa.me/8801885221084" style="color:var(--ac)">+880 1885-221084</a></p><p>Location<br>Chattogram, Bangladesh</p><div class="row soc" id="soc2"></div><a class="btn" href="#" id="resume2">Download Resume</a></div>
+<div class="card"><h3 style="margin-top:0">Send a message</h3><input id="cn" placeholder="Your name"><input id="ce" type="email" placeholder="Your email"><textarea id="cm" rows="5" placeholder="Your message"></textarea><button class="btn" id="send">Send Message</button></div></div></section>
+</div></main>
+
+<main id="detail"><div class="wrap" id="dv"></div></main>
+<footer><div class="wrap"><div class="logo">Minhaz<b>.</b></div><p class="mu" style="max-width:520px">Driven by curiosity about how the web works, I build full-stack applications that turn ideas into products people can use.</p><div class="soc" id="soc3"></div>© 2026 Minhazur Rahman. All rights reserved.</div></footer>
+
+<script>
+var $=function(i){return document.getElementById(i)};
+var SKL={"Languages":["JavaScript","HTML","CSS","SQL"],"Frontend":["React","Next.js","Tailwind CSS","DaisyUI"],"Backend":["Node.js","Express","REST APIs","JWT","BetterAuth","Prisma"],"Databases":["PostgreSQL","MongoDB"],"Tools":["Git","GitHub","Vercel","Render","Cloudinary","Figma","VS Code"]};
+var P={
+booknook:{n:"BookNook",c:"linear-gradient(135deg,#7c3aed,#2563eb)",s:"An online library to add, borrow and return books.",f:["Add, borrow and return books","Email and Google login with BetterAuth","Separate Express API deployed on Render"],t:["Next.js","Express","MongoDB","BetterAuth","DaisyUI"],d:"BookNook is a small online library where users sign in, browse books, and borrow or return them, and admins add new titles. The Next.js App Router client talks to a separate Express and MongoDB server, with BetterAuth handling email and Google login.",live:"https://booknook-client-727g.vercel.app",gh:"https://github.com/Minhaz-ify/booknook-client",ch:["Keeping authentication consistent across a separate client and server","Configuring BetterAuth with the MongoDB adapter and Google login","Deploying the client on Vercel and the server on Render with correct environment variables"],fu:["Due-date reminders and overdue fines","Book reservations and a waiting list","Search filters, reviews and ratings"]},
+back2u:{n:"Back2U",c:"linear-gradient(135deg,#7f1d1d,#be123c)",s:"A lost-and-found platform for the university.",f:["Post lost and found items with images","Smart match search by location and keywords","Admin approve or reject claims"],t:["React","Express","Prisma","PostgreSQL","JWT","Cloudinary"],d:"Back2U lets students post lost and found items with photos, location and date, search them, and submit claim requests that admins approve or reject. It is a six-member team project for CSE 242 with a RESTful API and PostgreSQL database.",live:"",gh:"",ch:["Coordinating work and merge conflicts across a six-person team","Building smart matching with partial location and keyword scoring","Handling image uploads and the claim approval flow, where an approved item becomes claimed"],fu:["Notifications for likely matches","Verification questions for claims","Mobile app version"]},
+bazar:{n:"Bazar Dor",c:"linear-gradient(135deg,#059669,#0891b2)",s:"A market price tracker with secure sign-in.",f:["Daily market price tracking","Protected routes with BetterAuth","Responsive interface"],t:["Next.js","BetterAuth","Tailwind CSS"],d:"Bazar Dor helps people check and compare daily market prices of everyday goods. Built with Next.js and BetterAuth, it protects personalised pages behind authentication while keeping browsing fast and simple.",live:"",gh:"https://github.com/Minhaz-ify/Assignment-07",ch:["Protecting routes while keeping public pages fast","Structuring data so prices are easy to compare","Making the interface comfortable on small screens"],fu:["Price history charts and trend alerts","User-submitted price reports","Bangla and English language toggle"]},
+fitlog:{n:"FitLog",c:"linear-gradient(135deg,#ea580c,#db2777)",s:"A workout library with a personal plan builder.",f:["Workout library grid and detail pages","Personal My Plan list","Built from a Figma design with an external API"],t:["Next.js","Tailwind CSS","REST API"],d:"FitLog is a workout library where users browse exercises in a grid, open detail pages, and add workouts to a personal My Plan list. Data comes from an external API and the layout follows the supplied Figma design.",live:"",gh:"https://github.com/Minhaz-ify/Assignment06",ch:["Translating a Figma design into reusable components","Fetching and handling data from an external API with App Router","Managing the My Plan list across pages"],fu:["Progress tracking and workout history","Custom routines with a timer","User accounts that sync plans across devices"]}};
+var SO=[["GitHub","https://github.com/minhazify"],["LinkedIn","https://linkedin.com/in/minhazify"],["Email","mailto:minhajabc23@gmail.com"],["Facebook","#"]];
+var soc=SO.map(function(s){return '<a href="'+s[1]+'" target="_blank" rel="noopener">'+s[0]+'</a>'}).join("");["soc","soc2","soc3"].forEach(function(i){$(i).innerHTML=soc});
+var ks=Object.keys(SKL);function showSk(k){$("st").innerHTML=ks.map(function(x){return '<button class="'+(x===k?"on":"")+'" data-k="'+x+'">'+x+' '+SKL[x].length+'</button>'}).join("");$("sc").innerHTML=SKL[k].map(function(x){return '<span class="chip">'+x+'</span>'}).join("");document.querySelectorAll("#st button").forEach(function(b){b.onclick=function(){showSk(b.dataset.k)}})}showSk(ks[0]);
+$("pg").innerHTML=Object.keys(P).map(function(k){var p=P[k];return '<div class="card pc"><div class="pi" style="background:'+p.c+'">'+p.n+'</div><div class="pb"><h3 style="margin:0">'+p.n+'</h3><p>'+p.s+'</p><div style="font-size:.75rem;letter-spacing:.1em;color:var(--ac);margin-top:8px">KEY FEATURES</div><ul class="k">'+p.f.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul><div class="chips">'+p.t.map(function(t){return '<span class="chip">'+t+'</span>'}).join("")+'</div><div class="row"><a class="btn" href="#project-'+k+'">View Details</a>'+(p.live?'<a class="btn o" target="_blank" rel="noopener" href="'+p.live+'">Live</a>':'')+(p.gh?'<a class="btn o" target="_blank" rel="noopener" href="'+p.gh+'">GitHub</a>':'')+'</div></div></div>'}).join("");
+var R=["Aspiring Full-Stack Developer","Next.js & React Developer","CSE Student","Problem Solver"],ri=0,ci=0,del=false;
+(function tick(){var w=R[ri];ci+=del?-1:1;$("ty").textContent=w.slice(0,ci);var t=del?40:85;if(!del&&ci===w.length){del=true;t=1400}else if(del&&ci===0){del=false;ri=(ri+1)%R.length;t=300}setTimeout(tick,t)})();
+function route(){var h=location.hash.slice(1),m=h.indexOf("project-")===0&&P[h.slice(8)];
+if(m){var p=P[h.slice(8)];$("home").style.display="none";$("detail").style.display="block";
+$("dv").innerHTML='<a class="back" href="#projects">← Back to projects</a><h1>'+p.n+'</h1><div class="ph" style="background:'+p.c+'">'+p.n+'</div><div class="row">'+(p.live?'<a class="btn" target="_blank" rel="noopener" href="'+p.live+'">Live Project</a>':'<span class="chip">Live link coming soon</span>')+(p.gh?'<a class="btn o" target="_blank" rel="noopener" href="'+p.gh+'">GitHub (Client)</a>':'<span class="chip">Repository is private</span>')+'</div><h3>Main Technology Stack</h3><div class="chips">'+p.t.map(function(t){return '<span class="chip">'+t+'</span>'}).join("")+'</div><h3>Description</h3><p class="mu">'+p.d+'</p><h3>Challenges Faced</h3><ul class="k">'+p.ch.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul><h3>Future Plans &amp; Improvements</h3><ul class="k">'+p.fu.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul>';window.scrollTo(0,0)}
+else{$("detail").style.display="none";$("home").style.display="block";var e=h&&$(h);if(e)setTimeout(function(){e.scrollIntoView()},30);else window.scrollTo(0,0)}
+$("lk").classList.remove("open")}
+window.addEventListener("hashchange",route);route();
+$("mb").onclick=function(){$("lk").classList.toggle("open")};
+$("send").onclick=function(){location.href="mailto:minhajabc23@gmail.com?subject="+encodeURIComponent("Portfolio message from "+$("cn").value)+"&body="+encodeURIComponent($("cm").value+"\n\n"+$("ce").value)};
+["resume","resume2"].forEach(function(i){$(i).onclick=function(e){if(this.getAttribute("href")==="#")e.preventDefault()}});
+</script>
+</body>
+</html>
